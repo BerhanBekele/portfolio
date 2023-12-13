@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html Forms</title>
+    <link rel="styleshhet" href="css/styles.css">
+</head>
+ 
+<body>
+    <h2>Form and Form Elements</h2>
+    <form>
+        <p>Gender : 
+            <label>Male</label>  <input type="radio" name="gender" value="male" />
+            <label>Female</label> <input type="radio" name="gender" value="female" />
+        </p>
+        <p>
+            Language: 
+            <ul style="list-style-type:none;">
+                <li>
+                    <input type="checkbox" name="language" value="Amharic" /> Amharic
+                </li>
+                <li>
+                    <input type="checkbox" name="language" value="English" /> English
+                </li>
+                <li>
+                    <input type="checkbox" name="language" value="AfanOromo" /> Afan Oromo
+                </li>
+                <li>
+                    <input type="checkbox" name="language" value="Germany" /> Germany
+                </li>
+            </ul>
+        </p>
+        <p>
+            <label>Nationality: </label>
+            <select name="Nationality">
+                <option value="British">British</option>
+                <option value="German">German</option>
+                <option value="USA">USA</option>
+                <option value="others">Others</option>
+            </select>
+        </p>
+        <p>
+            <label>Username : </label>  <input type="text" />
+        </p>
+        <p>
+            <label>Password : </label><input type="password" />
+        </p>
+        <p>
+            <label>Brief Info About You: </label>   <textarea name="briefInfo" rows="5" cols="40">
+            </textarea>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+    ​​<div>
+        <form action="#">
+     <label for="email">
+     Email: <input type="email" id="email" placeholder="Enter your email" /> 
+     </label>
+     <label for="message">
+     Message: <textarea id="message">Your Message</textarea>
+     </label>
+     <input type="submit" valid="Send Message" />
+        </form>
+     </div>
+     
+</body>
+</html>
