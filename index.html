@@ -6,79 +6,66 @@
 
     <head>
         <title>My Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-            /* * {
-            box-sizing: border-box;
-            } */
-
-            /* Create two equal columns that floats next to each other */
-            .column {
-            float: left;
-            width: 25%;
-            padding: 10px;
-            height: 300px; /* Should be removed. Only for demonstration */
-            }
-
-            /* Clear floats after the columns */
-            /* .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            } */
-            </style> -->
-    </head>
-
-
-    <body>
-
-        <div>
-            
-            <!-- <img src="https://placehold.co/150" /> -->
-            <img src="me.jpg" />
-            <h1 style="color: green;">Berhan Bekele</h1>
-            <h3 style="color: green;">Web Developer @ MoD</h3>
-            <!-- <p> <i> {{ Pause and ponder in the silence }} </i> </p> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        </div>     
+    </head>
+    <body>
+        <div  class="container">            
+          <div class="intro">  
+              <img class="profile-picture" src="images/me.jpg" />
+                <h1>Berhan Bekele</h1>
+                <h3>Web Developer @ MoD</h3>
+                <p> <i> {{ Pause and ponder in the silence }} </i> </p>
+              </div>
+              <div class="about-grid">  
+              <div class="about-list">
+                <h2> About</h2>
+                <ul>
+                  <li>I'm Berhan Bekele</li>
+                  <li>Working In MOD Human Resource MGMT Main Dept</li>
+                  <li>I'm a Group Leader</li>            
+              </ul>        
 
-<!-- <div class="row">
-    <!-- <div class="column" style="background-color:#aaa;"> -->
-      <!-- <div class="column">  -->
-        <div>            
-          <div>
+              </div>           
+                 <div class="about-list">
+                  <h2> More About</h2>
+                  <ul >
+                    <li>My Name Is Lt. Col Berhan Bekele</li>
+                    <li>I'm appointed to learn Web Development </li>
+                    <li>I've a programming skill specially in Java</li>
+                  </ul>
 
-      <h2> About</h2>
-            <ul>
-            <li>I'm Berhan Bekele</li>
-            <li>Working In MOD Human Resource MGMT Main Dept</li>
-            <li>I'm a Group Leader</li>            </ul>
-    <!-- </div> -->
-    <!-- <div class="column" style="background-color:#bbb;"> -->
-      <!-- <div class="column"> -->
+                 </div>    
+              
+           </div>
       </div>
-      <div>
-      <h2> More About</h2>
-      <ul>
-      <li>My Name Is Lt. Col Berhan Bekele</li>
-      <li>I'm appointed to learn Web Development </li>
-      <li>I've a programming skill specially in Java</li>
+
+      <h3 class="projects-heading"> My project </h1> 
+        <div class="projects-grid">
+          <div class="projects-image-weapper">
+          <h4> priject 1</h4>
+          <img width="300" height="250" class="projects-image" src="images/project-1.png" />                  
+          </div>
+          <div class="projects-image-weapper">
+            <h4> priject 2</h4>
+            <img width="300" height="250" class="projects-image" src="images/project-2.png" />                  
+            </div>
+             <div class="projects-image-weapper">
+              <h4> priject 3</h4>
+              <img width="300" height="250" class="projects-image" src="images/project-3.png" />                  
+              </div>
+               <div class="projects-image-weapper">
+                <h4> priject 4</h4>
+                <img width="300" height="250" class="projects-image" src="images/project-4.png" />                  
+                </div>
+             </div>         
   
-      </ul>
-    </div>
-  </div> 
-      <h1> Portfolio project 1</h1>           
-  <img src="https://placehold.co/150" />
-  <h1> Portfolio project 2</h1>           
-  <img src="https://placehold.co/150" />
-  <h1> Portfolio project 3</h1>           
-  <img src="https://placehold.co/150" />
-  <h1> Portfolio project 4</h1>           
-  <img src="https://placehold.co/150" />
-  <div>
+  <div class="links-and-contact">
+    <div class="links">
     <h3>Links</h3>
-    <ul>
+    <ul class="links-list">
       <li>
         <a href="https://github.com/<user>">Github</a>
       </li>
@@ -90,8 +77,24 @@
       </li>
     </ul>
 </div>
+</div>
+<div>
 
+  <form action="#">
+    <label for="email">
+      email:<input type="email" id="email" placeholder="Enter youir email">
+    </label>
+<label for="message">
+  Message:<textarea id="message"> Your Message</textarea> 
+</label>
+<div class="submit-button-wrapper">
+  <input type="submit" valid="Send Messge">
+</div>
 
+  </form>
+
+</div> 
+</div> 
 
     </body>
 </html>
