@@ -109,10 +109,10 @@ h1,h2,h3,h4{
  form input,textarea{
     padding: 5px;
     border-radius: 5px;
-    width: 240px;
+    /* width: 240px; */
  }  
  form {
-    width: 250px;
+    /* width: 250px; */
     margin: 0 auto;
  }  
  form input[type="submit"]{
