@@ -9,7 +9,7 @@
 </head>
  
 <body>
-    <script src="js/script.js"></script>
+   
     <!-- <h2>Form and Form Elements</h2> -->
     <form>
         <p>Gender : 
@@ -50,16 +50,43 @@
         </p>
         <p>
             <label>Brief Info About You: </label>   
-            <p><textarea name="briefInfo" rows="5" cols="40">   </textarea></p>
+            <p><textarea name="briefInfo" rows="5" cols="40"  id="message">   </textarea></p>
         </p>
         <label for="email">
             email:<input type="email" id="email" placeholder="Enter youir email">
           </label>
           <div class="submit-button-wrapper">
-            <input class="btn btn-primary" type="submit" valid="Send Messge">
-            </div>           
+            <input class="btn btn-primary" type="submit" valid="Send Messge" id="submit-button">
+            <div>    <p><textarea name="briefInfoOut" rows="5" cols="40"  id="messageOut">   </textarea></p></div>
+         
+       
+            </div>   
+            
+
+            <script>
+                // 
+                let submitButton = document.querySelector('#submit-button'); 
+                function clickListener(event) {
+                    event.preventDefault();
+                    let emailInput=document.querySelector('#email')
+                    let messageInput = document.querySelector('#message');
+                    let emailText = emailInput.value;
+                    let messageText = messageInput.value;
+                    console.log('email:', emailText, 'message:', messageText);
+                    //console.log('Button Clicked');
+                    let formattedString = 'email: ' + emailText + '\n message: ' + messageText;
+                    messageOut.value = formattedString;
+                    console.log(formattedString);
+                    alert(""+ formattedString);
+
+                    }
+                   
+                    submitButton.addEventListener('click', clickListener);
+          </script>
+               
           </form>
      </div>
-     
+     <!-- <script src="js/script.js"></script> -->
+    
 </body>
 </html>

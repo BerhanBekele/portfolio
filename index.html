@@ -100,25 +100,44 @@
       </li>
     </ul>
 </div>
-</div>
-<div>
-
-  <form action="#">
-    <label for="email">
-      email:<input type="email" id="email" placeholder="Enter youir email">
-    </label>
+<form action="#">
+  <label for="email">
+    email:<input type="email" id="email" placeholder="Enter youir email">
+  </label>
 <label for="message">
-  Message:<textarea id="message"> Your Message</textarea> 
+Message:<textarea id="message"> Your Message</textarea> 
 </label>
 <div class="submit-button-wrapper">
-  <input type="submit" valid="Send Messge">
+<input type="submit" valid="Send Messge" id="submit-button" >
 </div>
 
-  </form>
+</form>
+</div>
 
+<div>
 </div> 
 </div> 
+<script>
+  // 
+  let submitButton = document.querySelector('#submit-button'); 
+  function clickListener(event) {
+      event.preventDefault();
+      let emailInput=document.querySelector('#email')
+      let messageInput = document.querySelector('#message');
+      let emailText = emailInput.value;
+      let messageText = messageInput.value;
+      console.log('email:', emailText, 'message:', messageText);
+      //console.log('Button Clicked');
+      let formattedString = 'email: ' + emailText + '\n message: ' + messageText;
+      // messageOut.value = formattedString;
+      console.log(formattedString);
+      alert(""+ formattedString);
 
+      }
+     
+      submitButton.addEventListener('click', clickListener);
+</script>
+ 
     </body>
 </html>
 
